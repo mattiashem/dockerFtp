@@ -5,7 +5,7 @@
 #
 #
 useradd ftpuser  -m -s /bin/bash
-echo ftpuser:test3 | chpasswd
+echo ftpuser:$FTP_PASS | chpasswd
 
 
 /usr/sbin/vsftpd /etc/vsftpd.conf
